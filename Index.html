@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#563d7c">
+     <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+
+    <title>Jonathan Soares</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Jonathan Soares </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#sobre">Sobre Mim</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <main role="main">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="" src="image/slides/carro1.png" alt="">
+                        <div class="container">
+                            <div class="carousel-caption text-left" style="margin-top: 40px;">
+
+                                <h1>Fecete 2018</h1>
+
+                                <p>Carro Eletrico Vector</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="" src="image/slides/carro2.jpg" alt="">
+                        <div class="container">
+                            <div class="carousel-caption">
+
+                                <h1>Fecete 2018.</h1>
+
+                                <p>Fecete 2018 projeto Carro Eletrico Vector</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="" src="image/slides/feira.jpg" alt="">
+                        <div class="container">
+                            <div class="carousel-caption text-right">
+
+                                <h1>Cefete 2019.</h1>
+
+                                <p>Projeto Paper Sound.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    </section>
+    <section id="sobre">
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+        <br>
+        <div class="container marketing">
+            <img id="pro" src="image/profileultralow.png" alt="Minha Figura">
+            <h1 id="profile">Jonathan Americo Soares</h1>
+            <p id="textprofile">
+                Desenvolvedor Front End, Brasileiro Autodidata, <br>
+                Toda Minha Aprendizagem Vem De Livros é Cursos, <br>
+                Tenho 15 Anos, Disponivel Para Freelancer.
+                </p>
+        </div>
+    </section>
+    <hr class="featurette-divider">
+
+
+    <div class="container marketing">
+        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Trabalho Com:</h1>
+        <!-- Three columns of text below the carousel -->
+
+
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="" src="image/icons/html5.svg" alt="">
+                <title>Html5</title>
+                        
+
+
+
+                <h2>Html5</h2>
+                <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="" src="image/icons/css3.svg" alt="">
+                <title>Css</title>
+                        
+
+
+                <h2>Css</h2>
+                <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
+
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+               <img class="" src="image/icons/python-5.svg" alt="">
+                <title>Python</title>
+                        
+
+
+
+                <h2>Python</h2>
+                <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
+                </p>
+
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+
+
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" src="image/icons/c-2975.svg" alt="">
+                    <title>C</title>
+                            
+
+
+
+                    <h2>C</h2>
+                        <p>C é uma linguagem de programação compilada de propósito geral. </p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="" src="image/icons/figma-1.svg" alt="">
+                    <title>Figma</title>
+                            
+
+
+                    <h2>Figma</h2>
+                    <p>Figma é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web</p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="" src="image/icons/adobe-xd-1.svg" alt="">
+                    <title>Adobe XD</title>
+                            
+
+
+
+                    <h2>Adobe XD</h2>
+                    <p>Adobe XD é uma ferramenta de design de experiência do usuário baseada em vetor para aplicativos da web e aplicativos móveis.</p>
+
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+
+
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="" src="image/icons/adobe-photoshop-cs6.svg" alt="">
+                        <title>Photoshop</title>
+                                
+
+
+
+                        <h2>Photoshop</h2>
+                            <p>Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais do tipo raster desenvolvido pela Adobe Systems.</p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="" src="image/icons/eletron.png" alt="">
+                                <title>Eletronica</title>
+                                
+                            
+
+                        <h2>Eletronica</h2>
+                        <p>A eletrônica  ou eletrónica é a ciência que estuda a forma de controlar a energia elétrica por meios elétricos nos quais os elétrons têm papel fundamental.</p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                       <img class="bd-placeholder-img rounded-circle" src="image/icons/arduino-1.svg" alt=""> 
+                        <title>Arduino</title>
+                              
+
+
+
+                        <h2>Arduino</h2>
+                        <p>Arduino é uma plataforma de prototipagem eletrônica de hardware livre 
+                            e de placa única, projetada com um microcontrolador Atmel AVR
+                             com suporte de entrada/saída embutido, uma linguagem de programação padrão,</p>
+
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+                  <div class="container marketing">
+
+                <!-- Three columns of text below the carousel -->
+
+
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img  src="image/icons/android-logomark.svg" alt="">
+                        <title>Android Studio</title>
+                                
+
+
+                        <h2>Android Studio </h2>
+                            <p>Android Studio é um ambiente de desenvolvimento integrado para desenvolver para a plataforma Android.</p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img  src="image/icons/visual-studio-code-1.svg" alt="">
+                        <title>Visual studio Code</title>
+                                
+
+
+                        <h2>Visual Studio Code</h2>
+                        <p>O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.</p>
+                    </div>
+                    <!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="" src="image/icons/kotlin-1.svg" alt="">
+                        <title>Kotlin</title>
+                                
+
+
+
+                        <h2>Kotlin</h2>
+                        <p>Kotlin é uma Linguagem de programação multiplataforma, orientada a objetos e funcional, concisa e estaticamente tipada.</p>
+
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+
+                <section id="projetos">
+                    <!-- START THE FEATURETTES -->
+                    <br><br>
+
+                    <hr class="featurette-divider">
+                    <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Projetos</h1>
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading">Vector <span class="text-muted">Carro Eltrico.
+                            </span></h2>
+                            <p class="lead">
+                                Projeto desenvolvido para Feira de Ciências e Tecnologia organizada pela  <a href="https://www.etefmc.com.br/"> ETE FMC</a>, Desenvolvido por Jonathan Americo Soares, <a href="https://jn513.github.io/index.html"> Julio Nunes Avelar</a>, <a href="erro.html"> Mateus Vinicius Dutra.</a>
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img id="__projetos" class="" src="image/projetos/car.png" alt="">
+                        
+                        
+                    </svg>
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading"> <a href="https://papersound.herokuapp.com/" style=" color:black"> Paper Sound </a> <span class="text-muted">Rede Social.</span></h2>
+                            <p class="lead">
+                                Projeto desenvolvido para Feira de Ciências e Tecnologia organizada pela  <a href="https://www.etefmc.com.br/"> ETE FMC</a>, Desenvolvido por Jonathan Americo Soares, <a href="https://jn513.github.io/index.html"> Julio Nunes Avelar</a>, <a href="erro.html"> Mateus Vinicius Dutra.</a>
+                            </p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img id="_projetos" class="" src="image/projetos/papersound.png" alt="">
+                        
+                        
+                    </svg>
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2 class="featurette-heading">Podemos <span class="text-muted">Prataforma educacional. </span></h2>
+                            <p class="lead">ONG dedicada a realizar cursos de matemática olímpica e seriada de forma gratuita, <br>
+                                Contribuo para desenvolvimento Front End.
+                              <a href="">  GitHub:Podemoscorp </a>
+
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img id="___projetos" class="" src="image/projetos/podemos.png" alt="">
+                        
+                        
+                        </div>
+                    </div>
+
+                    <hr class="featurette-divider">
+
+                    <!-- /END THE FEATURETTES -->
+
+            </div>
+            <!-- /.container -->
+            </section>
+            <section id="eventos">
+                <br>
+                <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Eventos</h1>
+                <!-- eventos -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                        <title>Fecete2018</title>
+                        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Fecete 2018</text>
+                    </svg>
+                            <div class="card-body">
+                                <p class="card-text">Feira de Ciências e Tecnologia organizada pela ETE FMC. Com projeto apresentado Papersound (rede social para deficientes visuais)
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a type="button" href="https://github.com/Jonathan-A-Soares/Ana" class="btn btn-sm btn-outline-secondary">View GitHub</a>
+                                        <a href="https://docs.google.com/document/d/1H0gTmcQVeO1dHby2NTPm3AzWvCA_WmMNi2MruDDabQ8/edit?usp=sharing" type="button" class="btn btn-sm btn-outline-secondary">Relatorio Cientifico</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                        <title>Projete2019</title>
+                        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Projete 2019</text>
+                    </svg>
+                            <div class="card-body">
+                                <p class="card-text">Feira de Ciências e Tecnologia organizada pela ETE FMC. Com projeto apresentado Vector Carro Eletrico. Premiado 3º Lugar da Feira & 1º lugar Em inicialização cientifica</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a type="button" href="https://github.com/Jonathan-A-Soares/papersound" class="btn btn-sm btn-outline-secondary">View GitHub</a>
+                                        <a href="https://docs.google.com/document/d/1m4uSZ6_OnpgmbwMFHpCVL7ZHx3LsDiMjJn5WW-mK1_o/edit?usp=sharing" type="button" class="btn btn-sm btn-outline-secondary">Relatorio Cientifico</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">null</text>
+                    </svg>
+                            <div class="card-body">
+                                <p class="card-text">null</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="#" type="button" class="btn btn-sm btn-outline-secondary">null</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+</section>
+<section id="contato">
+            <hr class="featurette-divider">
+            <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Contato</h1>
+
+            <div id="form">
+
+                <form >
+                    <p>Email: jonathanamericosoares@gmail.com</p>
+                    <p>twiteer: <a href="https://twitter.com/bruxobum1">@bruxobum1</a></p>
+                    <p>GitHub: <a href="https://github.com/Jonathan-A-Soares">Jonathan-A-Soares</a> </p>
+                    <p>Telefone: (55) 35 99233-5169</p>
+                </form>
+
+            </div>
+</section>
+
+
+            <!-- FOOTER -->
+            <footer class="container" id="footer">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>Copyright&copy; 2020-2020 Jonathan-A-Soares. </p>
+            </footer>
+            </main>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script>
+                window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')
+            </script>
+            <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
