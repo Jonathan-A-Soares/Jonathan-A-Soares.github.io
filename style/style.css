@@ -1,149 +1,190 @@
-*{margin: 0 ; width:100%;}
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
+/*alinhando pagina para nao ter margin */
+body,html{
+  margin: 0;
+  width: 100%;
+  background-image: url("image/fundo.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-size: 400px;
 }
 
 
+/*coisas do cabeçario*/
+/*menu*/
 
+.menu{
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor:pointer;
+  transition: 2s;
+  position: sticky;
 
-.carousel {
-    margin-bottom: 4rem;
 }
 
 
-/* Since positioning the image, we need to help out the caption */
-
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
-
-/* Declare heights because of positioning of img element */
-
-.carousel-item {
-    height: 32rem;
-}
-
-.carousel-item>img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-}
-
-
-
-
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.marketing h2 {
-    font-weight: 400;
-}
-
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-    margin: 5rem 0;
     
+/* animando menu (Bars) */
+#menu-hambuguer{
+  display:none;
+}
+#menu-hambuguer:checked ~ #hm .hambuguer{
+  transform: rotate(45deg);
+
+}
+#menu-hambuguer:checked ~ #hm .hambuguer:after{
+  transform: rotate(90deg);
+  bottom: 0px;
+}
+#menu-hambuguer:checked ~ #hm .hambuguer:before{
+  transform: rotate(-90deg);
+  bottom: 0px;
+}
+
+.menu-true{
+  height: 80%;
+  width: 80px;
+  background-color: #303434;
+  margin-top: 80px;
+}
+
+/* Bars */
+.hambuguer:after {
+  background: white;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom:  17px;
+  transition: 1s;
+  display: block;
+}
+.hambuguer{
+  width: 35px;
+  height: 3px;
+  background: white;
+  position: relative;
+  top: 20px;
+  transition: 2s;
+  display: block;
+}
+
+.hambuguer:before {
+  background: white;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: -15px;
+  transition: 1s;
+  display: block;
 }
 
 
+/*cadastro*/
+#cadastro{
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+.cadastro{
+  text-decoration: none;
+  color:white;
+  font-size:30px;
+  float: right;
+  border: 1px solid;
+  border-radius: 8px;
+  width:128px ;
+  height:40px ;
+  margin-top: 16px;
+  margin-right: 5px;
+  background: #ff6312;
+  border: 0px;
+ 
+}
+.cadastro:hover{
+  background: white;
+  color: #ff6312;
+
+}
+/*login*/
+.login{
+  text-decoration: none;
+  color:white;
+  position: r;
+  font-size:30px;
+  margin-top: 17px;
+  float: right;
+  margin-right: 5px;
+}
+.login:hover{
+    color: #ff6312;
+}
+/*lupa*/
+.icone.lupa {
+  width: 20px;
+  height: 20px;
+  border: 4px solid white;
+  border-radius: 50%;
+  position: relative;
+  float: right;
+  margin-top: 15px;
+  margin-right:40px;
+}
+.icone.lupa:after {
+  position: absolute;
+  width: 22px;
+  height: 4px;
+  background-color: #fff;
+  display: block;
+  content: "";
+  top: 0%;
+  left: 0%;
+  transform: rotate(45deg);
+  transform-origin: -10px 30px;
+  float: right;
 
 
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
+}
+.cabeçario{
+  float: left;
+}
+/*retira underline dos link <a>*/
+a:link {
+  text-decoration: none;
+}
+a.nounderline:link{
+text-decoration:none;
 }
 
-#form{
-    text-align: center;
-}
-img{
-    width:140px; 
-    height:140px;
-}
-#__projetos{
-    width:320px; 
-    height:320px;
-}
-#_projetos{
-    width:320px; 
-    height:189px;
-    margin-top:131px ;
-}
-#___projetos{
-    width:384px; 
-    height:97px;
-    margin-top: 130px;
-    
-}
+/*cabeçario*/
+.cabeçario{
+  height: 70px;
+  width: 100%;
+  background: #303434;
+  top: 0px;
+  position: sticky;
 
 
+}
+#logo{
+  width: 741px;
+    height: 299px;
+}
+/*rodapé*/
 
-@media (min-width: 0em) {
-    #profile {
-        text-align: center;
-        font-size: 2rem;
-        font-family: arial;
-    }
-    #pro {
-        margin-left: 42%;
-        display: flex;
-    }
-    #textprofile {
-        text-align: center;
-    }
+.rodape {
+  min-height: 100%;
 }
 
-@media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
-    .featurette-heading {
-        font-size: 50px;
-    }
-    #profile {
-        text-align: center;
-    }
-    #pro {
-        margin-left: 42%;
-        display: flex;
-    }
-    #textprofile {
-        text-align: center;
-    }
+.rodapé {
+  padding: 20px;
+  padding-bottom: 50px;
 }
 
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
-    }
-    #profile {
-        text-align: center;
-    }
-    #pro {
-        margin-left: 42%;
-        display: flex;
-    }
-    #textprofile {
-        text-align: center;
-    }
+.rodap3{
+  height: 50px;
+  margin-top: 80%;
+  background: #303434
 }
