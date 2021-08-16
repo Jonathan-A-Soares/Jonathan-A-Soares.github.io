@@ -1,496 +1,455 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#563d7c">
-     <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
 
     <title>Jonathan Soares</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="image/icons/baseline_perm_identity_white_24dp.png" />
+
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
     <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 
-
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
+    <script src="./js/projet.js"></script>
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="#">Jonathan Soares </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Sobre">Sobre Mim </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#sobre">Sobre Mim</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projetos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://github.com/Jonathan-A-Soares">GitHub</a>
+                            <div class="dropdown-divider "></div>
+                            <a class="dropdown-item " href="#Projetos">Projetos Principais</a>
+                        </div>
+                    </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#eventos">Eventos</a>
+                        <a class="nav-link " href="#Eventos">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#contato">Contato</a>
+                        <a class="nav-link " href="#Formação">Formação </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Contato">Contato</a>
                     </li>
 
                 </ul>
 
             </div>
         </nav>
+
+
     </header>
-    <section id="home">
-        <main role="main">
 
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="" src="image/slides/carro1.png" alt="">
-                        <div class="container">
-                            <div class="carousel-caption text-left" style="margin-top: 40px;">
+    <!-- <section id="Home">
+        <div style=" margin-top: rem; ">
+            <div class="card bg-dark text-white">
+                <img src="./image/slides/Screenshot_1921.png" height=" 550px" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h1 class="card-title" style="margin-top: 10rem; margin-left:4rem ;">Bem Vindo meu Portifolio</h1>
+                    <h3 class="card-text" style="margin-left:5rem">Sou progamador, Designer 3d. </h3>
 
-                                <h1>Fecete 2018</h1>
-
-                                <p>Carro Eletrico Vector</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="image/slides/carro2.jpg" alt="">
-                        <div class="container">
-                            <div class="carousel-caption">
-
-                                <h1>Fecete 2018.</h1>
-
-                                <p>Fecete 2018 projeto Carro Eletrico Vector</p>
-                                id
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="" src="image/slides/feira.jpg" alt="">
-                        <div class="container">
-                            <div class="carousel-caption text-right">
-
-                                <h1>Cefete 2019.</h1>
-
-                                <p>Projeto Paper Sound.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
+        </div>
+    </section> -->
+
+    <section id="Sobre">
+        <br> <br>
+        
+
+        <div style="text-align: center; max-width: 700px; margin: auto; font-size: 15px;">
+
+            <img src="https://avatars.githubusercontent.com/u/43283993?s=400&u=8ec887a83e918c418952a908e3f8b93f4cebe0cf&v=4"
+                name="aboutme" width="200" height="200" style="border-radius: 50%;" class="img-circle"></a>
+            <h1 class="media-heading">Jonathan A. Soares</h1>
+            <p> <strong> Bio: </strong> <br> Desenvolvedor Junior Brasileiro, Tenho 16 Anos. <br>
+                Estudante autodidata, Focado em Ciência de Dados , Programação, Engenharia Eletronica, Engenharia de
+                Software e
+                Modelagem 3D.
+            </p>
+            <br>
+
+
+        </div>
+
+
+
+
     </section>
-    <section id="sobre">
-        <!-- Marketing messaging and featurettes
-  ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <section id="Experiencias">
+        <hr class="featurette-divider">
 
 
-        <br>
         <div class="container marketing">
-            <img id="pro" src="image/profileultralow.png" alt="Minha Figura">
-            <h1 id="profile">Jonathan Americo Soares</h1>
-            <p id="textprofile">
-                Desenvolvedor Front End, Brasileiro Autodidata, <br>
-                Toda Minha Aprendizagem Vem De Livros é Cursos, <br>
-                Tenho 15 Anos, Disponivel Para Freelancer.
+            <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Experiencias</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Conhecimentos</th>
+                        <th scope="col">Experiencia</th>
+                        <th scope="col">Convivencia</th>
+                        <th scope="col">Progamas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>C/C++</td>
+                        <td>10 Mes</td>
+                        <td>2 Anos</td>
+                        <td> Visual Studio Code / Arduino Ide</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Python 3</td>
+                        <td>5 Mes</td>
+                        <td>2 Anos</td>
+                        <td> Visual Studio Code</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Modelagem 3d</td>
+                        <td>1 Ano</td>
+                        <td>2 Anos </td>
+                        <td> Fusion 360 / SketchUp</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Html5 / Css3</td>
+                        <td>2 Anos</td>
+                        <td>6 Anos</td>
+                        <td> Visual Studio Code</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Arduino</td>
+                        <td> 9 Mes</td>
+                        <td> 1 Anos</td>
+                        <td>Arduino Ide</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Eletronica</td>
+                        <td> 3 Anos</td>
+                        <td> 6 Anos</td>
+                        <td>Proteus 8.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Designer</td>
+                        <td> 3 Mes</td>
+                        <td> 2 Anos</td>
+                        <td>Figma / Adobe Xd</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Desenvolvimento Android</td>
+                        <td> 1 Mes</td>
+                        <td> 5 Mes</td>
+                        <td>Android Studio</td>
+                    </tr>
+                </tbody>
+            </table>
+
+    </section>
+
+    <section id="Projetos">
+        <hr class="featurette-divider">
+        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Principais Projetos</h1>
+
+
+        <div id="limit">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Impressora 3d Alpha V1 (Diy)</h5>
+                            </a>
+                            <p class="card-text">Impressora 3D CoreXy, designer feito por mim no Fusion 360,
+                                Montada usando de controladora um arduino Mega2560 é controladora Ramsp 1.4 conta com
+                                Firmaware
+                                Marlin 1.1.9.1 (versão simples sem upgrades, com peças feita em madeira) <br>
+                            </p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a type="button"
+                                    href="https://gallery.autodesk.com/projects/162451/impressora-3d-corexy-alpha-v1"
+                                    class="btn btn-outline-primary">Gallery Autodesk</a>
+                                <a type="button" class="btn btn-outline-primary">Ver no GitHub</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Cabeça de Impressão para impressora 3d </h5>
+                            </a>
+                            <p class="card-text">Modelado em 3d, Cabeça de Impressão para impressora 3d, com proposito
+                                de
+                                substituir o do projeto inical que e feito em madeira e nao conta resfriamneto de
+                                camadas,
+                                feito
+                                para hotend volcano v6 com resfriamento de camadas </p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a type="button"
+                                    href="https://gallery.autodesk.com/projects/suporte-para-lcd-mini-16x02 "
+                                    class="btn btn-outline-primary ">Gallery Autodesk</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Vector Carro Eletrico. Fecete 2018</h5>
+                            </a>
+                            <p class="card-text">Projeto desenvolvido para Feira de Ciências e Tecnologia organizada
+                                pela
+                                ETE FMC, Desenvolvido por Jonathan Americo
+                                Soares, Julio Nunes Avelar, Mateus Vinicius Dutra.</p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a type="button" href="https://github.com/Jonathan-A-Soares/Ana"
+                                    class="btn btn-outline-primary">Ver no Github</a>
+                                <a type="button"
+                                    href="https://docs.google.com/document/d/1H0gTmcQVeO1dHby2NTPm3AzWvCA_WmMNi2MruDDabQ8/edit"
+                                    class="btn btn-outline-primary">Relatorio Cientifico</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Paper Sound Rede Social. Projete 2019</h5>
+                            </a>
+                            <p class="card-text">Projeto desenvolvido para Feira de Ciências e Tecnologia organizada
+                                pela
+                                ETE FMC, Desenvolvido por Jonathan Americo
+                                Soares, Julio Nunes Avelar, Mateus Vinicius Dutra.</p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a type="button" href="https://github.com/Jonathan-A-Soares/papersound"
+                                    class="btn btn-outline-primary">Ver no Github</a>
+                                <a type="button"
+                                    href="https://docs.google.com/document/d/1m4uSZ6_OnpgmbwMFHpCVL7ZHx3LsDiMjJn5WW-mK1_o/edit"
+                                    class="btn btn-outline-primary">Relatorio Cientifico</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Gerador de QrCode Criptografado</h5>
+                            </a>
+                            <p class="card-text"> Projeto para gerar Codigo Qr Criptografado, e ler é
+                                descriptografar, para uso geral. </p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a type="button" href="https://github.com/Jonathan-A-Soares/QrCodeCriptografado"
+                                    class="btn btn-outline-primary">Ver no Github</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="">
+                                <h5>Rastreador Veicular Gprs, Gsm e SmS</h5>
+                            </a>
+                            <p class="card-text">Projeto Conclui em Mandar Sms para numero do modulo (sim800l), E modulo
+                                Retorna Sms Com localidade do veiculo Em Latitude
+                                Longitude e Link para mapa. </p>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <a type="button" href="https://github.com/Jonathan-A-Soares/RastreadorGprsPorSms"
+                                    class="btn btn-outline-primary">Ver no Github</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="Eventos">
+        <br>
+        <hr class="featurette-divider">
+        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Eventos</h1>
+
+        <div class="card-group">
+            <div class="card">
+                <img src="./image/projetos/Projete.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><a class="stretched-link"
+                            href="https://www.etefmc.com.br/noticia-04-10-2019-projete-edicao-especial-comemorativa-aos-60-anos-da-ete-fmc">
+                            PROJETE</a> – Edição Especial ETE FMC – 60 Anos.</h5>
+                    <p class="card-text">Feira de Ciências e Tecnologia organizada pela ETE FMC. Apresentando Projeto
+                        Paper Sound.</p>
+                    <p class="card-text"><small class="text-muted">03 de outubro 2019</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./image/projetos/Fecete.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><a class="stretched-link"
+                            href="https://www.etefmc.com.br/noticia-09-10-2018-semana-da-eletronica-2018"> FECETE</a> -
+                        Feira de Ciências e Tecnologia.</h5>
+                    <p class="card-text">Feira de Ciências e Tecnologia organizada pela ETE FMC. Apresentado projeto
+                        Vector Carro Eletrico.</p>
+                    <p class="card-text"><small class="text-muted">02 a 07 de outubro 2018</small></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Formação">
+
+        <hr class="featurette-divider">
+        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Formação</h1>
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">Ensino Medio</h5>
+                <p class="card-text">Entrei em 2020, Cursando o Segundo Ano Ensino Medio na<br> Escola Estadual Dr.
+                    Lauro Corrêa do Amaral.</p>
+                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <a href="#" class="btn btn-outline-primary disabled">Ver Certificado</a>
+                    <a href="https://www.mg.gov.br/instituicao_unidade/escola-estadual-dr-lauro-correa-do-amaral-0"
+                        class="btn btn-outline-primary">Escola</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">JavaScript e jQuery </h5>
+                <p class="card-text">
+                <ul>
+                    <li>25 Aulas</li>
+                    <li>1 Hora de conteudo em video</li>
+                </ul> Realizado na <a href="https://www.udemy.com"> Udemy</a>.</p>
+                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <a href="https://drive.google.com/file/d/1HRp06pRt1sskkmI5-Vb-4NVVaxwDTwn1/view?usp=sharing"
+                        class="btn btn-outline-primary">Ver Certificado</a>
+                    <a href="https://www.udemy.com/course/introducao-ao-jquery/learn/lecture/11903440#overview"
+                        class="btn btn-outline-primary">Curso</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> -->
+    </section>
+
+    <section id="Contato">
+        <hr class="featurette-divider">
+        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Contato</h1>
+
+        <div id="form">
+
+            <form>
+
+                <p>Email: <a href="mailto:jonathanamericosoares@gmail.com">jonathanamericosoares@gmail.com</a>
                 </p>
+                <p>Twitter: <a href="https://twitter.com/bruxobum1">@bruxobum1</a></p>
+                <p>GitHub: <a href="https://github.com/Jonathan-A-Soares">Jonathan-A-Soares</a> </p>
+                <p>Telefone: (55) 35 99233-5169</p>
+            </form>
+
         </div>
     </section>
-    <hr class="featurette-divider">
 
 
-    <div class="container marketing">
-        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Trabalho Com:</h1>
-        <!-- Three columns of text below the carousel -->
+    <!-- FOOTER -->
+    <footer class="container" id="footer">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>Site desenvolvido por <a href="https://github.com/Jonathan-A-Soares">Jonathan-A-Soares.</a></p>
+    </footer>
 
 
 
-        <div class="row">
-            <div class="col-lg-4">
-                <img id="trab" class="" src="image/icons/html5.svg" alt="">
-                <title>Html5</title>
-                        
-
-
-
-                <h2>Html5</h2>
-                
-
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img id="trab" class="" src="image/icons/css3.svg" alt="">
-                <title>Css</title>
-                        
-
-
-                <h2>Css</h2>
-                
-            </div>
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-               <img id="trab" class="" src="image/icons/python-5.svg" alt="">
-                <title>Python</title>
-                        
-
-
-
-                <h2>Python</h2>
-                
-
-            </div>
-            <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-        <div  class="container marketing">
-
-            <!-- Three columns of text below the carousel -->
-
-
-
-            <div class="row">
-                <div class="col-lg-4">
-                    <img id="trab"  class="bd-placeholder-img rounded-circle" src="image/icons/c-2975.svg" alt="">
-                    <title>C</title>
-                            
-
-
-
-                    <h2>C</h2>
-                       
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img id="trab" class="" src="image/icons/figma-1.svg" alt="">
-                    <title>Figma</title>
-                            
-
-
-                    <h2>Figma</h2>
-                    
-                </div>
-                <!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img id="trab" class="" src="image/icons/adobe-xd-1.svg" alt="">
-                    <title>Adobe XD</title>
-                            
-
-
-
-                    <h2>Adobe XD</h2>
-                   
-
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
-            <div class="container marketing">
-
-                <!-- Three columns of text below the carousel -->
-
-
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img id="trab" class="" src="image/icons/adobe-photoshop-cs6.svg" alt="">
-                        <title>Photoshop</title>
-                                
-
-
-
-                        <h2>Photoshop</h2>
-                            
-                    </div>
-                    <!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img id="trab" class="" src="image/icons/eletron.png" alt="">
-                                <title>Eletronica</title>
-                                
-                            
-
-                        <h2>Eletronica</h2>
-                        </div>
-                    <!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                       <img id="trab" class="bd-placeholder-img rounded-circle" src="image/icons/arduino-1.svg" alt=""> 
-                        <title>Arduino</title>
-                              
-
-
-
-                        <h2>Arduino</h2>
-                        
-
-                    </div>
-                    <!-- /.col-lg-4 -->
-                </div>
-                <!-- /.row -->
-                  <div  class="container marketing">
-
-                <!-- Three columns of text below the carousel -->
-
-
-
-                <div class="row">
-                    <div class="col-lg-4">
-                        <img  id="trab" src="image/icons/android-logomark.svg" alt="">
-                        <title>Android Studio</title>
-                                
-
-
-                        <h2>Android Studio </h2>
-                            </div>
-                    <!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img id="trab" src="image/icons/visual-studio-code-1.svg" alt="">
-                        <title>Visual studio Code</title>
-                                
-
-
-                        <h2>Visual Studio Code</h2>
-                        </div>
-                    <!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img id="trab" class="" src="image/icons/kotlin-1.svg" alt="">
-                        <title>Kotlin</title>
-                                
-
-
-
-                        <h2>Kotlin</h2>
-                        
-                    </div>
-                    <!-- /.col-lg-4 -->
-                </div>
-                 <div class="row">
-                    <div class="col-lg-4">
-                           </div>
-                    <!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
-                        <img id="trab" src="image/icons/seeklogo.png" alt="">
-                        <title>SketchUp</title>
-                                
-
-
-                        <h2>SketchUp</h2>
-                         </div>
-                    <!-- /.col-lg-4 -->
-                    
-                    <!-- /.col-lg-4 -->
-                </div>
-                <!-- /.row -->
-
-                <section id="projetos">
-                    <!-- START THE FEATURETTES -->
-                    <br><br>
-
-                    <hr class="featurette-divider">
-                    <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Projetos</h1>
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">Vector <span class="text-muted">Carro Eltrico.
-                            </span></h2>
-                            <p class="lead">
-                                Projeto desenvolvido para Feira de Ciências e Tecnologia organizada pela  <a href="https://www.etefmc.com.br/"> ETE FMC</a>, Desenvolvido por Jonathan Americo Soares, <a href="https://jn513.github.io/index.html"> Julio Nunes Avelar</a>, <a href="erro.html"> Mateus Vinicius Dutra.</a>
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img id="__projetos" class="" src="image/projetos/car.png" alt="">
-                        
-                        
-                    </svg>
-                        </div>
-                    </div>
-
-                    <hr class="featurette-divider">
-
-                    <div class="row featurette">
-                        <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading"> <a href="https://papersound.herokuapp.com/" style=" color:black"> Paper Sound </a> <span class="text-muted">Rede Social.</span></h2>
-                            <p class="lead">
-                                Projeto desenvolvido para Feira de Ciências e Tecnologia organizada pela  <a href="https://www.etefmc.com.br/"> ETE FMC</a>, Desenvolvido por Jonathan Americo Soares, <a href="https://jn513.github.io/index.html"> Julio Nunes Avelar</a>, <a href="erro.html"> Mateus Vinicius Dutra.</a>
-                            </p>
-                        </div>
-                        <div class="col-md-5 order-md-1">
-                            <img id="_projetos" class="" src="image/projetos/papersound.png" alt="">
-                        
-                        
-                    </svg>
-                        </div>
-                    </div>
-
-                    <hr class="featurette-divider">
-
-                    <div class="row featurette">
-                        <div class="col-md-7">
-                            <h2 class="featurette-heading">Podemos <span class="text-muted">Prataforma educacional. </span></h2>
-                            <p class="lead">ONG dedicada a realizar cursos de matemática olímpica e seriada de forma gratuita, <br>
-                                Contribuo para desenvolvimento Front End.
-                              <a href="">  GitHub:Podemoscorp </a>
-
-                            </p>
-                        </div>
-                        <div class="col-md-5">
-                            <img id="___projetos" class="" src="image/projetos/podemos.png" alt="">
-                        
-                        
-                        </div>
-                    </div>
-
-                    <hr class="featurette-divider">
-
-                    <!-- /END THE FEATURETTES -->
-
-            </div>
-            <!-- /.container -->
-            </section>
-            <section id="eventos">
-                <br>
-                <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Eventos</h1>
-                <!-- eventos -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Fecete2018</title>
-                        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                            dy=".3em">Fecete 2018</text>
-                    </svg>
-                            <div class="card-body">
-                                <p class="card-text">Feira de Ciências e Tecnologia organizada pela ETE FMC. Com projeto apresentado Papersound (rede social para deficientes visuais)
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a type="button" href="https://github.com/Jonathan-A-Soares/Ana" class="btn btn-sm btn-outline-secondary">View GitHub</a>
-                                        <a href="https://docs.google.com/document/d/1H0gTmcQVeO1dHby2NTPm3AzWvCA_WmMNi2MruDDabQ8/edit?usp=sharing" type="button" class="btn btn-sm btn-outline-secondary">Relatorio Cientifico</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Projete2019</title>
-                        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                            dy=".3em">Projete 2019</text>
-                    </svg>
-                            <div class="card-body">
-                                <p class="card-text">Feira de Ciências e Tecnologia organizada pela ETE FMC. Com projeto apresentado Vector Carro Eletrico. Premiado 3º Lugar da Feira & 1º lugar Em inicialização cientifica</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a type="button" href="https://github.com/Jonathan-A-Soares/papersound" class="btn btn-sm btn-outline-secondary">View GitHub</a>
-                                        <a href="https://docs.google.com/document/d/1m4uSZ6_OnpgmbwMFHpCVL7ZHx3LsDiMjJn5WW-mK1_o/edit?usp=sharing" type="button" class="btn btn-sm btn-outline-secondary">Relatorio Cientifico</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                            dy=".3em">null</text>
-                    </svg>
-                            <div class="card-body">
-                                <p class="card-text">null</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="#" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                        <a href="#" type="button" class="btn btn-sm btn-outline-secondary">null</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    </div>
-</section>
-<section id="contato">
-            <hr class="featurette-divider">
-            <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 60px;">Contato</h1>
-
-            <div id="form">
-
-                <form >
-                    
-                    <p>Email: <a href="mailto:jonathanamericosoares@gmail.com">jonathanamericosoares@gmail.com</a> </p>
-                    <p>Twiteer: <a href="https://twitter.com/bruxobum1">@bruxobum1</a></p>
-                    <p>GitHub: <a href="https://github.com/Jonathan-A-Soares">Jonathan-A-Soares</a> </p>
-                    <p>Telefone: (55) 35 99233-5169</p>
-                </form>
-
-            </div>
-</section>
-
-
-            <!-- FOOTER -->
-            <footer class="container" id="footer">
-                <p class="float-right"><a href="#">Back to top</a></p>
-                <p>Copyright&copy; 2020-2020 Jonathan-A-Soares. </p>
-            </footer>
-            </main>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script>
-                window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')
-            </script>
-            <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 
 
 
