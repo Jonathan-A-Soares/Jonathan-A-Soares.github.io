@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#563d7c">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+
+    <title>Jonathan Soares</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/icons/baseline_perm_identity_white_24dp.png" />
+
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/projet.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.html">Jonathan Soares </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+
+
+                    <li class="nav-item">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projetos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://github.com/Jonathan-A-Soares">GitHub</a>
+                            <div class="dropdown-divider "></div>
+                            <a class="dropdown-item " href="index.html#Projetos">Projetos Principais</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Resumo">Resumo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Documentaçao">Documentaçao</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Git do Projeto">Git do Projeto</a>
+                    </li>
+                    </li>
+
+
+
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section id="historia">
+        <h4 style="text-align: center;  margin-top:45px;">Gerador de QrCode Criptografado</h4>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            O código em questão apresenta uma implementação interessante de geração de chaves criptográficas e criação
+            de códigos QR para armazenar essas chaves. Vamos analisar em detalhes o que ele faz e como funciona.
+        </p>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            Geração de Chave Aleatória:
+
+            A primeira parte do código se concentra na geração de uma chave aleatória. Esta chave é composta por letras
+            maiúsculas e números, criando uma sequência de caracteres aparentemente aleatória. A aleatoriedade desse
+            processo é crucial para a segurança da criptografia, uma vez que torna a chave extremamente difícil de ser
+            adivinhada por terceiros.
+        </p>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            Criptografia da Mensagem "Pastel":
+
+            A segunda etapa do código envolve a criptografia da palavra "pastel" usando a chave aleatória gerada
+            anteriormente. A técnica utilizada é o JWT (JSON Web Token), uma forma comum de criptografia que utiliza o
+            algoritmo HS256 (HMAC-SHA-256) para garantir a integridade e autenticidade dos dados. O resultado dessa
+            etapa é uma mensagem criptografada.
+        </p>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            Codificação em Base64:
+
+            Em seguida, o código procede à codificação da chave aleatória em base64. Isso é feito usando a biblioteca
+            base64 do Python, que converte os bytes da chave em uma sequência de caracteres legíveis.
+        </p>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            Criação da Chave Final:
+
+            A chave final é então gerada, incorporando a mensagem criptografada, a chave original e a chave codificada
+            em base64. Essa chave final é crucial para a posterior descriptografia da mensagem e deve ser tratada com
+            extrema segurança. Ela encapsula as informações necessárias para a operação de descriptografia.
+        </p>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            Criação do Código QR:
+
+            Uma vez que a chave final tenha sido formada, o código gera um código QR que a representa. Isso é feito
+            usando a biblioteca qrcode para criar uma imagem contendo a representação visual da chave. Os códigos QR são
+            frequentemente usados para armazenar informações que podem ser facilmente lidas por dispositivos, como
+            smartphones.
+        </p>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            Resultado e Utilização:
+
+            O resultado final do código é a impressão da chave final, que agora está armazenada em um código QR. Essa
+            representação visual da chave pode ser compartilhada e usada para descriptografar a mensagem original, desde
+            que a chave original (chamada KeyDefalt no código) seja mantida em um local seguro e usada corretamente.
+        </p>
+        <p class="Int" style=" margin-bottom: -15px; text-indent: 20px;">
+            Este código exemplifica conceitos importantes de segurança da informação, incluindo geração de chaves
+            aleatórias, criptografia e uso de códigos QR para representar informações sensíveis. É importante notar que
+            a segurança dessas chaves e informações é de extrema importância, uma vez que elas podem ser usadas para
+            acessar dados confidenciais. Portanto, o manuseio adequado das chaves e a implementação segura são
+            essenciais ao usar esse tipo de código em cenários reais.
+        </p>
+
+
+
+    </section>
+
+    <section id="Resumo">
+        <hr class="featurette-divider">
+        <h1
+            style="text-align: center; margin-top:15px; margin-bottom: 30px; font-size: 40px; font-family: 'Times New Roman', Times, serif;">
+            Resumo</h1>
+        <p class="Int" style="font-family: 'Times New Roman', Times, serif;  text-indent: 20px;"> O código gera uma
+            Este código Python gera uma chave criptográfica aleatória, usa essa chave para criptografar a palavra
+            "pastel", codifica a chave em base64 e cria um código QR contendo a chave criptografada. O código QR é uma
+            representação visual da chave que pode ser compartilhada e usada para descriptografar a mensagem
+            posteriormente, desde que a chave original seja mantida segura. Este código demonstra conceitos importantes
+            de criptografia e segurança de dados.
+
+            <br><br>
+            Palavras-Chave: Criptografia. Key. QR Code.
+        </p>
+
+
+    </section>
+
+    <section id="Documentaçao">
+        <hr class="featurette-divider">
+        <h1 style="text-align: center; margin-top:15px; margin-bottom: 30px; font-size: 40px;"> Documentaçao</h1>
+        <h6 style="text-align: center;">Criptografia de uma mensagem e a criação de um código QR</h6>
+
+        <div id="limit_curso">
+
+
+            <h2>Visão Geral</h2>
+            <p>Este código Python demonstra a geração de uma chave aleatória, a criptografia de uma mensagem e a criação
+                de um código QR contendo a chave final. A chave final inclui a mensagem criptografada, a chave original
+                e a chave codificada em base64.</p>
+
+            <h2>Bibliotecas Utilizadas</h2>
+            <ul>
+                <li>`jwt`: Usada para criar tokens JSON Web.</li>
+                <li>`json`: Usada para lidar com dados JSON.</li>
+                <li>`random`: Usada para gerar números e caracteres aleatórios.</li>
+                <li>`string`: Usada para manipular caracteres alfanuméricos.</li>
+                <li>`base64`: Usada para codificar e decodificar em base64.</li>
+                <li>`qrcode`: Usada para criar códigos QR.</li>
+            </ul>
+
+            <h2>Funções Principais</h2>
+            <ol>
+                <li>
+                    <h3>`RandomCode()`</h3>
+                    <p>Gera uma chave aleatória composta por letras maiúsculas e números. A chave gerada é usada como
+                        parte da criptografia.</p>
+                </li>
+                <li>
+                    <h3>`CripSha256(key, code)`</h3>
+                    <p>Cria um token JWT (JSON Web Token) usando o algoritmo de criptografia HS256 (HMAC-SHA-256). O
+                        token contém uma mensagem (`code`) e é assinado com uma chave (`key`). O token criptografado é
+                        retornado.</p>
+                </li>
+                <li>
+                    <h3>`CripSha2562Key(key1, key, code)`</h3>
+                    <p>Similar à função anterior, mas também inclui uma segunda chave (`key1`) no token. Esta função
+                        cria um token JWT que contém a mensagem (`code`) e duas chaves diferentes (`key` e `key1`) e é
+                        assinado com a chave `key`.</p>
+                </li>
+                <li>
+                    <h3>`CripBase64(msg)`</h3>
+                    <p>Codifica uma mensagem em base64.</p>
+                </li>
+            </ol>
+
+            <h2>Uso do Código</h2>
+            <p>O código pode ser usado para gerar uma chave criptografada que pode ser usada para descriptografar uma
+                mensagem posteriormente. A chave final é codificada em um código QR para fácil compartilhamento.</p>
+
+            <h2>Exemplo de Uso</h2>
+            <pre><code>
+        # Geração de uma chave aleatória
+        KeyRandom = RandomCode()
+        
+        # Criptografia da palavra "pastel" usando a chave aleatória
+        CodeSha = CripSha256(KeyRandom, "pastel")
+        
+        # Codificação da chave aleatória em base64
+        KeyBase64Crip = CripBase64(KeyRandom)
+        
+        # Criação de uma chave final
+        KeyEnd = CripSha2562Key(KeyBase64Crip, KeyDefalt, CodeSha)
+        
+        # Criação de um código QR com a chave final
+        filename = "Confidencial.png"
+        img = qrcode.make(KeyEnd)
+        img.save(filename)
+        print(KeyEnd)
+            </code></pre>
+
+            <h2>Notas Adicionais</h2>
+            <ul>
+                <li>É importante manter a chave original (`KeyDefalt`) em um local seguro, pois ela é necessária para
+                    descriptografar a mensagem.</li>
+                <li>Certifique-se de que as bibliotecas necessárias, como `jwt`, `qrcode`, etc., estejam instaladas no
+                    ambiente Python antes de executar o código.</li>
+            </ul>
+
+            <h2>Autor</h2>
+            <p>Este código foi criado por <a href="https://github.com/Jonathan-A-Soares">Jonathan-A-Soares.</a> e pode
+                ser modificado ou estendido conforme necessário.</p>
+        </div>
+    </section>
+
+    <section id="Git do Projeto">
+        <hr class="featurette-divider">
+        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 30px;">Git do Projeto</h1>
+        <div id="limit_curso" class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Gerador de QrCode Criptografado</h5>
+                <h6 class="card-subtitle mb-2 text-muted">GitHub</h6>
+                <p class="card-text">Desenvolvi um projeto que tem como objetivo criar códigos QR criptografados, bem
+                    como realizar a leitura e descriptografia desses códigos para fins de uso geral.</p>
+                <a href="https://github.com/Jonathan-A-Soares/QrCodeCriptografado/tree/main" class="card-link">Ir Para
+                    GitHub</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Contato">
+        <hr class="featurette-divider">
+        <h1 style="text-align: center; margin-top:-15px; margin-bottom: 30px; font-size: 30px;">Contato</h1>
+
+        <div id="form">
+
+            <form>
+
+                <p>Email: <a href="mailto:jonathanamericosoares@gmail.com">jonathanamericosoares@gmail.com</a>
+                </p>
+
+                <p>GitHub: <a href="https://github.com/Jonathan-A-Soares">Jonathan-A-Soares</a> </p>
+                <p>Telefone: (55) 35 99233-5169</p>
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="container" id="footer">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>Site desenvolvido por <a href="https://github.com/Jonathan-A-Soares">Jonathan-A-Soares.</a></p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

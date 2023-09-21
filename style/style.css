@@ -87,3 +87,10 @@ body {
   justify-content: space-around;
   margin:auto;
 }
+#img_gps{
+  max-width: 800px;
+  max-height:1000px ;
+  display: flex;
+  justify-content: space-around;
+  margin:auto;
+}
